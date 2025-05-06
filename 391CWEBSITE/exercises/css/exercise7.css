@@ -1,0 +1,70 @@
+main {
+    padding: 25px;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+body {    
+    margin: 0 auto;
+    max-width: 1000px;
+    color: #202020;
+    background-color: #F7F6ED;
+}
+p {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #d3d3d3;
+    background-color: #ffffff;
+    padding:20px;
+}
+h1{
+    color:#000000;
+    font-family: "shadows Into Light", cursive;
+    letter-spacing: 1rem;
+}
+a.button:link {
+    color:#ffc0cb;
+    border: 1px solid #ffff00;
+    background-color: #00ffff;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    filter: drop-shadow(0.3rem 0.3rem .2rem #c7c7c7);
+}
+a.button:visited {
+    color:#ff0000;
+    border: 1px solid #ffff00;
+    background-color: #00ffff;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    filter: drop-shadow(0.3rem 0.3rem .2rem #c7c7c7)
+}
+a.button:hover {color:#0000ff;
+        border: 1px solid #ffff00;
+        background-color: #00ffff;
+        padding: 10px;
+        position: relative;
+        bottom: 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        filter: drop-shadow(0.3rem 0.3rem .2rem #c7c7c7)
+}
+a.button:active {
+    color:#008000;
+    border: 1px solid #ffff00;
+    background-color: #00ffff;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    filter: drop-shadow(0.3rem 0.3rem .2rem #c7c7c7)
+}
+

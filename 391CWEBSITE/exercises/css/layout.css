@@ -1,0 +1,140 @@
+
+Body{
+    background-color: cyan;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr flex;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    background-color: black;
+    color: white;
+}
+
+.navbar-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.menu-button{
+background-color: transparent;
+color: white;
+border: none;
+cursor: pointer;
+padding-right: 10px;
+}
+.menu-button:hover{
+    color: rgba(255, 255, 255, 0.772);
+}
+/*
+.menu-home {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    height:auto;
+}
+.icon {
+    background-image: url("../images/houseday.jpg");
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    width: 50px;
+    height: 50px;
+} 
+
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    width: 50px; 
+    height: 50px;
+    border: none; 
+    background-image: url("../../images/houseday.png"); 
+    background-size: cover;
+    transition: background-image 0.3s;
+    background-color: transparent;
+}
+
+.icon:hover {
+    animation: changeImages 3s infinite;
+}
+
+
+@keyframes changeImages {
+    0% {
+        background-image: url("../../images/houseday.png");
+    }
+    33% {
+        background-image: url("../../images/house1.png");
+    }
+    66% {
+        background-image: url("../../images/house2.png");
+    }
+    100% {
+        background-image: url("../../images/house3.png");
+    }
+} */
+.icon {
+    position: relative; /* Position relative to its container */
+    width: 28px; /* Adjust the width as needed */
+    height: 36px; /* Adjust the height as needed */
+    border: none; /* Optional: Remove default button border */
+    background-image: url("../../images/houseday.png"); /* Initial image */
+    background-size: cover;
+    transition: background-image 0.3s ease;
+    background-color: transparent;
+}
+
+.icon img {
+    display: fill;
+    position: absolute; /* Position the image absolutely */
+    bottom: 0; /* Position the image at the top of the button */
+    left: 0; /* Align the image to the left of the button */
+    width: 28px; /* Ensure the image fills the container */
+    height: 36px; /* Maintain aspect ratio */
+}
+
+.icon:hover {
+    animation: changeImages 3s infinite;
+}
+
+@keyframes changeImages {
+    0% {
+        background-image: url("../../images/houseday.png");
+    }
+    33% {
+        background-image: url("../../images/house1.png");
+    }
+    66% {
+        background-image: url("../../images/house2.png");
+    }
+    100% {
+        background-image: url("../../images/house3.png");
+    }
+}

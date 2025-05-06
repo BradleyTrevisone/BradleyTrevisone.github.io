@@ -1,0 +1,113 @@
+html, body {
+    background-color: pink;
+    margin:0;
+    padding:0;
+
+    }
+.wrapper{
+    /*fix image capabilities to collapse on itself */
+    border: 3px solid black; 
+    display: grid;
+    grid-template-rows: 100px 400px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    min-height: 100vh;
+}
+header { 
+    /* Header Text with Underline */
+    text-decoration: underline 5px;
+    text-decoration-color: rgb(105, 215, 160);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: span 7; 
+    background-color: black;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.titleleft{
+    border: 1px solid black;
+    background-color: #32174d;
+    color: #f9f9f9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    text-transform: uppercase;
+    padding: 2px;
+}
+/* https://pixabay.com/photos/forest-path-trees-outdoors-way-868715/ */
+.photo1{
+    background-image: url("../../images/photo1.jpg");
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid black;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.image1{
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: block; 
+}
+.welcome{
+    border: 1px solid black;
+    background-color: #38b338;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px;
+}
+/* https://pixabay.com/photos/architecture-oxford-university-4755067/ */
+.photo2{
+    border: 1px solid black;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    overflow: hidden;
+}
+.image2{
+    width:100%;
+    height: 100%;   
+    padding: 0px;
+    object-fit: cover;
+     display: block; 
+   /* transition: width 0.5s ease;
+    transform-origin: center center;
+
+        margin: 0px;*/
+}
+.about{
+    border: 1px solid black;
+    background-color: burlywood;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    padding: 20px;
+}
+/* https://www.pexels.com/photo/woman-in-gray-jacket-sitting-beside-desk-2682452/ */
+.image3{
+    max-width: auto;
+    height: auto;   
+    padding: 20px;
+    margin: 0px;
+    object-fit: scale-down;
+    transition: width 0.3s ease;
+    transform-origin: center center;
+    float: right;
+}
+
+/*
+<img src="../images/photo1.jpg" alt="a dated stone building in Oxford, England" class="image1"> */
