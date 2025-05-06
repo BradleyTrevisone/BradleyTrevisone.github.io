@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image" href="../images/lilbugguy.png">
+        <link href="../portfolio/css/portfolio.css" rel="stylesheet">
+        <title>Web-Design-Course-Exercises</title>
+        <script>
+           /* Open */
+        function openNav() {
+            console.log("Opening menu...");
+            document.getElementById("myNav").style.height = "100%";
+            // Add event listener for the Escape key
+            document.addEventListener("keydown", closeOnEscape);
+        }
+    
+        /* Close */
+        function closeNav() {
+            console.log("Menu closed!");
+            document.getElementById("myNav").style.height = "0";
+            // Remove event listener for the Escape key
+            document.removeEventListener("keydown", closeOnEscape);
+        }
+    
+        /* Event listener function for Escape key */
+        function closeOnEscape(event) {
+            if (event.key === "Escape") {
+                console.log("Escape key pressed.");
+                closeNav();
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="../index.html" class="name clickable">Bradley Trevisone</a>
+            </div>
+            <div class="navbar-right">
+                <div class="menu">
+                    <button class="menu-button" onclick="openNav()">Menu</button>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <div class="columnleft">
+                                <p>MAIN</p>
+                                <ul>
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="columnright">
+                                <p>WORK</p>
+                                <ul>
+                                    <li><a href="writing.html">Shakespeare Writings</a></li>
+                                    <li><a href="eng391.html">Web Design Course Exercises</a></li>
+                                    <li><a href="resume.html">Resume</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../index.html" class="icon-link">
+                    <button class="icon"></button>
+                 </a>
+            </div>
+        </nav>
+    <div class="wrapper">
+        <div class="title">
+            <h1>My Shakespeare Courses Work Portfolio</h1>
+        </div>
+        <div class="subtitle">
+            <div class="subtitlepart1">
+            <h2>I deeply enjoyed all of my Shakespeare courses because of how extensive and diverse our readings were. It allowed me to see what themes, feelings, and ideas I want to play with a little longer...</h2></div>
+        </div>
+        </div>
+        <div class="writinggrid">
+            <div class="lacuna">
+                <iframe id="lacunapdf" src="papers/lacuna.pdf" frameborder="0"></iframe>
+                </div>
+            
+                <div class="lacunatext">
+                <i>Lacuna</i> is my creative writing piece from my Advanced Shakespeare course that focuses entirely on the play <i><span class="italic">Othello</span></i> to explore 1600's racecraft. In this project, I wrote about how identity is formed from what we learn and how we learn we're also wrong, explore how people choose what they want to hear when others talks, and even touch upon how our identity and bodies are not fully our own possessions. <br><br> <br><br> 
+                <a href="papers/lacuna.pdf" target="_blank" class="pdflink">View The PDF Here</a>
+                </div>
+            <div class="blank1"></div>
+        <div class="learfinal">
+                <iframe id="learfinalpdf" src="papers/shakefinale.pdf" frameborder="0"></iframe>
+                </div>
+                <div class="learfinaltext">
+                This final essay for my normal Shakespeare course was a personal reflection of ourselves in one of the plays. <i><span class="italic">King Lear</span></i> was one of my favorite pieces of art I've ever gotten to experience from all of its tragedy of aging, being rejected by family, and completely losing your identiy. However, I thought this play was an extremely beautiful rebirth that highly questioned human's natural state of being and what we've surrendered in order to evolve. This play seemed so desperate to be more than tragedy, that I wrote about how tragedies, void of happiness, still make themselves meaningful.
+                <br><br> <br><br> 
+                <a href="papers/shakefinale.pdf" target="_blank" class="pdflink">View The PDF Here</a>
+                </div>
+            <div class="blank2"></div>
+        <div class="lear">
+                <iframe id="learpdf" src="papers/learadvance.pdf" frameborder="0"></iframe>
+                </div>
+                    <div class="leartext">
+                    This is another assignment within <i><span class="italic">King Lear</span></i> that explores language and inventions as  faulty tools. Using a setting hundreds of years before Shakespeares time, he's able to demonstate how internal wounds have become assosiated with present day needs rather than our natural human ones. An example being Edmund's deep struggle with being an illegitiment son when before the idea of pure identity was created, this would never have been an issue. It then calls to question when did we learn this to begin with?
+                    <br><br> <br><br> 
+                <a href="papers/learadvance.pdf" target="_blank" class="pdflink">View The PDF Here</a>
+                </div>
+                <div class="blank3"></div>
+        <div class="play">
+                <iframe id="playpdf" src="papers/playjournal.pdf" frameborder="0"></iframe>
+                </div>
+                <div class="playtext">
+                    This is a fun journal for my Advanced Shakespeare course about my reaction to the play <i><span class="italic">As You Like IT</span></i>. I talk about intentionally this play balances between tragedy and comedy, the importance of self-entertainment, and how excited I am to be able to see more Shakespeare comedies like <i>Antony and Cleopatra</i> during my summer abroad at Oxford University.
+                    <br><br> <br><br> 
+                    <a href="papers/playjournal.pdf" target="_blank" class="pdflink">View The PDF Here</a>
+                </div>
+        <div class="blank4"></div>
+        </div>
+    </div>
+</body>
+</html>

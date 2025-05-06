@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image" href="../images/lilbugguy.png">
+        <link href="../portfolio/css/portfolio.css" rel="stylesheet">
+        <title>Resume</title>
+        <script>
+           /* Open */
+        function openNav() {
+            console.log("Opening menu...");
+            document.getElementById("myNav").style.height = "100%";
+            // Add event listener for the Escape key
+            document.addEventListener("keydown", closeOnEscape);
+        }
+    
+        /* Close */
+        function closeNav() {
+            console.log("Menu closed!");
+            document.getElementById("myNav").style.height = "0";
+            // Remove event listener for the Escape key
+            document.removeEventListener("keydown", closeOnEscape);
+        }
+    
+        /* Event listener function for Escape key */
+        function closeOnEscape(event) {
+            if (event.key === "Escape") {
+                console.log("Escape key pressed.");
+                closeNav();
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="../index.html" class="name clickable">Bradley Trevisone</a>
+            </div>
+            <div class="navbar-right">
+                <div class="menu">
+                    <button class="menu-button" onclick="openNav()">Menu</button>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <div class="columnleft">
+                                <p>MAIN</p>
+                                <ul>
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="columnright">
+                                <p>WORK</p>
+                                <ul>
+                                    <li><a href="writing.html">Shakespeare Writings</a></li>
+                                    <li><a href="eng391.html">Web Design Course Exercises</a></li>
+                                    <li><a href="resume.html">Resume</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../index.html" class="icon-link">
+                    <button class="icon"></button>
+                 </a>
+            </div>
+        </nav>
+        <div class="title">
+             <h2>Resume</h2>
+        </div>
+        <div class="resumespace">
+            <div class="resumespaceleft">
+                <iframe id="resumepaper" src="papers/trevisone_resume.pdf" frameborder="0"></iframe>
+            </div>
+            <div class="resumespaceright">
+                <a href="papers/trevisone_resume.pdf" target="_blank" class="fullpagepdf">Open PDF Here</a>
+            </div>
+        </div>
+</div>
+</body>
+</html>

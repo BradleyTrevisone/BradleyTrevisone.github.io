@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image" href="../images/lilbugguy.png">
+        <link href="../portfolio/css/portfolio.css" rel="stylesheet">
+        <title>Web-Design-Course-Exercises</title>
+        <script>
+           /* Open */
+        function openNav() {
+            console.log("Opening menu...");
+            document.getElementById("myNav").style.height = "100%";
+            // Add event listener for the Escape key
+            document.addEventListener("keydown", closeOnEscape);
+        }
+    
+        /* Close */
+        function closeNav() {
+            console.log("Menu closed!");
+            document.getElementById("myNav").style.height = "0";
+            // Remove event listener for the Escape key
+            document.removeEventListener("keydown", closeOnEscape);
+        }
+    
+        /* Event listener function for Escape key */
+        function closeOnEscape(event) {
+            if (event.key === "Escape") {
+                console.log("Escape key pressed.");
+                closeNav();
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="../index.html" class="name clickable">Bradley Trevisone</a>
+            </div>
+            <div class="navbar-right">
+                <div class="menu">
+                    <button class="menu-button" onclick="openNav()">Menu</button>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <div class="columnleft">
+                                <p>MAIN</p>
+                                <ul>
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="columnright">
+                                <p>WORK</p>
+                                <ul>
+                                    <li><a href="writing.html">Shakespeare Writings</a></li>
+                                    <li><a href="eng391.html">Web Design Course Exercises</a></li>
+                                    <li><a href="resume.html">Resume</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../index.html" class="icon-link">
+                    <button class="icon"></button>
+                 </a>
+            </div>
+        </nav>
+    <div class="wrapper">
+        <div class="title">
+            <h1>My First Web Design Course Portfolio</h1>
+        </div>
+        <div class="subtitle">
+            <div class="subtitlepart1">
+            <h2>As this class concluded, I found myself becoming naturally interested in learning design elements that are simple and playful. Practicing how to convey information fascinated me.</h2></div>
+        </div>
+    </div>
+    <div class="exerciselist">
+        <ul>
+            <li>Exercise 1: <a href="../exercises/proper-exercise-1.html">About Me</a></li>
+            <li>Exercise 2:  <a href="../exercises/resume-draft.html">Resume</a></li>
+            <li>Exercise 4:  <a href="../exercises/exercise-4.html">Images</a></li>
+            <li>HTML Checkin: <a href="../exercises/htmlcheckin.html">Html Checkin</a></li>
+            <li>Exercise 5: <a href="../exercises/exercise5.html"> About Me with Css</a></li>
+            <li>Exercise 5 Resume: <a href="../exercises/exercise5-resume.html"> Resume with css</a></li>
+            <li>Exercise 6: <a href="../exercises/exercise6.html"> CSS Typography</a></li>
+            <li>CSS Check in: <a href="../exercises/csscheckin.html"> CSS Check In</a></li>
+            <li>Exercise 7: <a href="../exercises/exercise7.html"> PDFs for website</a></li>
+            <li>Exercise 8: <a href="../exercises/exercise8.html"> Grid Practicing</a></li>
+            <li>Exercise 9: <a href="../exercises/exercise9.html">CCS Grid Part 2</a></li>
+            <li>CSS Check in: <a href="../exercises/csslayoutcheckin.html"> CCS layout gridwork</a></li>
+            <li>Exercise 10: <a href="../exercises/exercise10.html"> Directory Bar</a></li>
+            <li>Home Page/Bio: <a href="../index.html"> Directory Bar</a></li>
+            </ul>
+    </div>
+</div>
+</body>
+</html>

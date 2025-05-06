@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="images/lilbugguy.png">
+    <link href="portfolio/css/portfolio.css" rel="stylesheet">
+    <title>BradleyTrevisone</title>
+    <script>
+       /* Open */
+    function openNav() {
+        console.log("Opening menu...");
+        document.getElementById("myNav").style.height = "100%";
+        // Add event listener for the Escape key
+        document.addEventListener("keydown", closeOnEscape);
+    }
+
+    /* Close */
+    function closeNav() {
+        console.log("Menu closed!");
+        document.getElementById("myNav").style.height = "0";
+        // Remove event listener for the Escape key
+        document.removeEventListener("keydown", closeOnEscape);
+    }
+
+    /* Event listener function for Escape key */
+    function closeOnEscape(event) {
+        if (event.key === "Escape") {
+            console.log("Escape key pressed.");
+            closeNav();
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="name clickable">Bradley Trevisone</a>
+        </div>
+        <div class="navbar-right">
+            <div class="menu">
+                <button class="menu-button" onclick="openNav()">Menu</button>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <div class="columnleft">
+                            <p>MAIN</p>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="portfolio/contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="columnright">
+                            <p>WORK</p>
+                            <ul>
+                                <li><a href="portfolio/writing.html">Shakespeare Writings</a></li>
+                                <li><a href="portfolio/eng391.html">Web Design Course Exercises</a></li>
+                                <li><a href="portfolio/resume.html">Resume</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./index.html" class="icon-link">
+                <button class="icon"></button>
+             </a>
+        </div>
+    </nav>
+    <div class="hi">
+        <div class="miniphoto">
+            <img class="pfp" src="images/pfp.png" alt="Headshot of Bradley Trevisone">
+        </div> 
+        <h1>Hi, I’m Bradley<br> creatively driven to learn as much as I can about people through art. 
+        </h1>
+    </div>
+    <div class="now">
+        <h2>Currently, I am an English Major at UMass Amherst
+        </h2>
+    </div>
+    <div class="display">
+        <div class="displayleft">
+                <img src="images/uxicon.png" alt="UX/UI Design Icon" class="uxuiicon">
+                <div class="displaylefttext">
+                    <h2> Here, I’ve began building towards my UX/UI career by understanding the fundamentals of Web Design. </h2>
+                </div>
+                <div class="displayleftsubtext">
+                    <h3> My class work portfolio</h3>
+                </div>
+                <div class="arrow-button">
+                    <a href="portfolio/eng391.html">→</a>
+                </div>
+                    
+        </div>
+        <div class="displayright">
+            <img src="images/shakespeare.png" alt="Shakespeare Icon" class="shakespeare">
+            <div class="displayrighttext">
+                <h2>Always, I aspire to work on my creative writing. I’m learning how to develop my voice...</h2>
+            </div>
+            <div class="displayrightsubtext">
+                <h3> In my Shakespeare classes</h3>
+            </div>
+            <div class="arrow-button">
+                <a href="portfolio/writing.html">→</a>
+            </div>
+        </div>
+    </div>
+    <div class="psycology">
+        <div class="psycologyleft">
+        <h2>I am deeply fascinated and influenced by psychology in all aspects of my life.<br><br>
+        I hope to build a career where I'm enabled to communicate this kind approach towards life.
+        </h2></div>
+        <div class="psycologyright">
+            <img src="images/water.png" alt="water drop icon" class="water">
+        </div>
+    </div>
+    <div class="dreams">
+        <div class="dreamsheader">
+            <h2>While I finish my undergraduates, I'm currently working on two projects... </h2> 
+        </div>
+        <div class="dreamssubheader">
+            <h3> I'll be working on my novella during my summer abroad in Oxford and finishing an online dictionary for 'Chic and Vampire Words'</h3>
+        </div>
+        <div class="construction">
+            <img src="images/book.png" alt="book icon" class="book">
+            <p> Coming Soon!</p>
+            <img src="images/lilbugguy.png" alt="little bug watcher guy" class="vampire">
+        </div>
+    </div>
+        <div class="dreambar">
+            <div class="dreambar1">
+                <img src="images/globe.png" alt="Globe Icon" class="travel">
+                <div class="travelcaption"><h4>I love exploring new places while meeting new people from and learning about different life perspectives</h4></div>
+            </div>
+            <div class="dreambar2">
+                <img src="images/music.png" alt="music 1/8th notes" class="music">
+                <div class="musiccaption"><h4>Music has been a massive aspect of my identity and I love learning more about guitar, heavy metal, and music theory</h4></div>
+            </div> 
+            <div class="dreambar3">
+                <img src="images/camera.png" alt="Film Camera Icon" class="camera">
+                <div class="cameracaption"> <h4> I'm excited to learn more about graphic design through photography, creating graphics, and fashion as my career becomes more creatively driven</h4>
+                </div>
+            </div>
+        </div>    
+    <article class="end">
+        <div class="endleft">
+            <img src="images/camera.png" alt="Film Camera Icon" class="wave">
+            <div class="reach"><h3> I'm always excited to hear from everybody if you want to talk about any projects you're working on, or just want to say hi.</h3> </div>
+            <div class="bye"><h4>My Best,<br> Bradley Trevisone</h4> 
+            </div>
+            <div class="credit">
+                <h5>The website and home button was made by myself. <a href="https://www.linkedin.com/in/bradley-trevisone-83aa76308/" class="linkedin">Check out my LinkedIn</a> <br> All Icons were taken from ICONFINDER and their respective designers were paid.</h5>
+
+            </div>
+        </div>
+        <div class="endright">
+        </div>
+    </article>
+</div>
+</body>
+</html>
