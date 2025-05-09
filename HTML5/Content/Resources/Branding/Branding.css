@@ -4,8 +4,6 @@
 
 :root
 {
-	--Primary: #076685;
-	--Secondary: #CDE0E7;
 	--Dark: #45494C;
 	--Darkest: #000000;
 	--Light: #DADEE1;
@@ -15,5 +13,7 @@
 	--FontFamily: Arial, Avenir, Myriad;
 	--LogoImage: url('../Images/final logo atmpt full-150px.png');
 	--LogoImagePrint: url('../Images/Artboard 1 copy.svg');
+	--Primary: #6DA3BB;
+	--Secondary: #cde0e7;
 }
 

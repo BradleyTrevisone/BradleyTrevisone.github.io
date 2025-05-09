@@ -204,7 +204,7 @@ h1
 {
 	font-weight: bold;
 	font-size: 24.0pt;
-	color: #076685;
+	color: #6DA3BB;
 }
 
 h2
@@ -279,7 +279,7 @@ div.home-tiles > div
 	float: left;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	background-color: #CDE0E7;
+	background-color: #cde0e7;
 	padding: 2%;
 	color: #000000;
 }
@@ -443,17 +443,17 @@ MadCap|breadcrumbsProxy
 
 a
 {
-	color: #076685;
+	color: #6DA3BB;
 }
 
 a:link
 {
-	color: #076685;
+	color: #6DA3BB;
 }
 
 a:visited
 {
-	color: #076685;
+	color: #6DA3BB;
 }
 
 MadCap|dropDown
@@ -493,7 +493,7 @@ MadCap|expandingHead
 	font-weight: normal;
 	cursor: hand;
 	text-decoration: none;
-	color: #076685;
+	color: #6DA3BB;
 }
 
 MadCap|xref
@@ -501,7 +501,7 @@ MadCap|xref
 	font-weight: bold;
 	mc-format: '{para}';
 	text-decoration: underline;
-	color: #076685;
+	color: #6DA3BB;
 }
 
 /* Lists */
@@ -547,7 +547,7 @@ p.frame-footer-text
 
 .page-layout-front-header
 {
-	background-color: #076685;
+	background-color: #6DA3BB;
 	height: 155px;
 	width: 825px;
 }
@@ -564,7 +564,7 @@ p.frame-footer-text
 
 .page-layout-front-main
 {
-	background-color: #CDE0E7;
+	background-color: #cde0e7;
 	height: 650px;
 	margin: 0px;
 }
@@ -583,7 +583,7 @@ p.frame-footer-text
 
 div.home-footer
 {
-	background-color: #076685;
+	background-color: #6DA3BB;
 	padding: 2% 5%;
 }
 
