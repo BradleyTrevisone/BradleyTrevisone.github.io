@@ -213,6 +213,7 @@ h2
 	font-size: 18.0pt;
 	page-break-before: always;
 	padding-top: 20px;
+	color: #45494C;
 }
 
 h3
@@ -220,6 +221,7 @@ h3
 	font-weight: bold;
 	font-size: 14.0pt;
 	padding-top: 20px;
+	color: #45494C;
 }
 
 h4
@@ -245,7 +247,7 @@ h6
 div.home-layout
 {
 	padding: 2% 5%;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 }
 
 div.home-section
@@ -412,7 +414,7 @@ div.topic-hero
 
 div.topic-hero h1
 {
-	color: #DADEE1;
+	color: var(--#076685);
 	font-size: 48pt;
 	text-align: center;
 }
@@ -600,12 +602,12 @@ p.footer
 	margin-top: 5px;
 	margin-bottom: 5px;
 	line-height: 13pt;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 p.footer-sub
 {
-	color: #FFFFFF;
+	color: #ffffff;
 	font-size: 14pt;
 	margin-top: 14px;
 }
